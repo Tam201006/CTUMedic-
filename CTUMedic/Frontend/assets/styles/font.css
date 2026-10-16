@@ -1,0 +1,46 @@
+:root{
+    --color-blue-dark: #1f5ca9;
+    --color-blue-light: #00afef;
+    --text-color-white: white;
+    --text-color-black: black;
+}
+
+@font-face {
+    font-family: 'K2D';
+    src: url(../font/K2D/K2D-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'K2D';
+    src: url(../font/K2D/K2D-Bold.ttf);
+    font-style: normal;
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'K2D';
+    src: url(../font/K2D/K2D-Italic.ttf);
+    font-style: italic;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'k2D';
+    src: url(../font/K2D/K2D-BoldItalic.ttf);
+    font-style: italic;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Readex Pro';
+    src: url(../font/Readex_Pro/static/ReadexPro-Regular.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'Readex Pro';
+    src: url(../font/Readex_Pro/static/ReadexPro-Bold.ttf);
+    font-style: normal;
+    font-weight: bold;
+}
+
+

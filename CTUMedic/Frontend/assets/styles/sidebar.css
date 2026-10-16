@@ -1,0 +1,119 @@
+.sidebar {
+    background: var(--color-blue-dark, #034ea2);
+    color: var(--text-color-white, #ffffff);
+    padding: 20px 16px;
+    width: 250px;
+    min-width: 250px;
+    height: 100vh;
+    box-shadow: 4px 0 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+    /* Header chứa Logo & Tiêu đề */
+    .header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 12px;
+        padding-bottom: 16px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+
+        img {
+            width: 40px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            text-align: left;
+
+            .title {
+                font-size: 15px;
+                font-weight: 700;
+                margin: 0;
+                line-height: 1.2;
+                color: #ffffff;
+            }
+
+            .sub-title {
+                font-size: 12px;
+                opacity: 0.85;
+                margin: 3px 0 0 0;
+                color: #e2e8f0;
+            }
+        }
+    }
+
+    /* Content chứa lời chào & Menu */
+    .content {
+        flex-grow: 1;
+        padding-top: 24px;
+
+        h2 {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            text-align: left;
+            color: #ffffff;
+        }
+
+        nav {
+            ul {
+                list-style: none; /* Xóa chấm đen bullet point */
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 6px;
+
+                li {
+                    a {
+                        display: flex;
+                        align-items: center;
+                        gap: 12px;
+                        padding: 10px 14px;
+                        color: #ffffff;
+                        text-decoration: none;
+                        font-size: 14.5px;
+                        font-weight: 500;
+                        border-radius: 8px;
+                        transition: all 0.2s ease;
+
+                        /* Style cho file SVG local (thẻ img) */
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            /* Dòng thần thánh: Tự động đổi màu icon SVG đen sang màu TRẮNG */
+                            filter: brightness(0) invert(1); 
+                        }
+
+                        /* Hiệu ứng rê chuột vào menu */
+                        &:hover {
+                            background-color: rgba(255, 255, 255, 0.18);
+                            transform: translateX(4px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    /* Footer ở đáy Sidebar */
+    .footer {
+        padding-top: 16px;
+        border-top: 1px solid rgba(255, 255, 255, 0.2);
+        text-align: center;
+
+        p {
+            font-size: 12px;
+            opacity: 0.8;
+            margin: 0;
+            color: #ffffff;
+        }
+    }
+}
